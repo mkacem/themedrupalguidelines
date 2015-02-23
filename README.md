@@ -49,5 +49,48 @@
 ## Approche à adopter
 
 En se basant sur l'existant, on se rend compte qu'il n'existe pas d'approche parfaite d'où la nécessité de trouver une solution qui réunit les deux methodes pour tirer le meilleurs parti d'elles.
+On va donc utiliser un process d'intégration qui se base sur ces points:
 
+###A Réunion début de projet 
+Des réunions seront envisagé avec les devs et chef de projets technique pour donner une lecture technique du projet.
+A la fin de ces réunion, on dégagera la strcuture du site (vues, bloc, région, menu...) et on le communiquera à l'intégrateur chargé du découpage des maquette.
+Le theme du site sera fixé lors de cette réunion selon les contraintes technique du projet (responsive ou pas).
 
+###B Début d'intégration
+L'intégrateur se basera sur le theme installé pour customiser tout les composant graphique  du site (boutons, pagination, lien, titre.... ) via le module "style guide".
+Il pourra ainsi récupérer des fichiers LESS ou CSS qu'il va utiliser dans des intégrations statiques
+
+###C intégration statique
+Une fois les composants drupal customisé, l'intégrateur attaquera les gabarit et layout des pages indépendament de drupal. Ce ci dit, il n'aura pas toute la liberté pour créer ses balise et class css.
+
+Nous fixons des règles d'integration comme suit :
+
+- L'intégrateur aura toute la liberté de créer les balise/css du gabarit du site. Ces balise seront transporté dans les fichiers html.tpl et pages.tpl
+- l'intégrateur se basera sur les elements dégagés lors de la réunion de debut de projet. Ainsi il pourra récupérer et appliquer le code d'un bloc ou d'un vue ...
+
+exemple :
+
+```
+<div class="block nom-class-specifique">
+   <h2 class="block-title">Titre du bloc</h2>
+   <div class="block-content content">
+    <p>ce ci est un contenu de test</p>
+   </div>
+</div> <!-- /.block -->
+```
+- l'intégrateur appliquera une classe spécifique au bloc et l'utilisara de façon générique dans tout le site et à tout les element du bloc 
+
+exemple :
+
+```
+.nom-class-specifique h2 {
+    font-size: 2em;
+}
+.nom-class-specifique .content {
+    font-size: 1em;
+}
+```
+
+- il sera interdit d'utiliser les id dans la css afin de pouvoir les réutiliser dans d'autres blocs
+- il sera interdit de référencer les classes css par rapport au body ou html du site sauf exeption (.front, .no-front,.ie8, lt-ie9...)
+- 
