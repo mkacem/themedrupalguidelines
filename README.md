@@ -2,7 +2,7 @@
 
 ** ce document constitu un guideline. Il est amener à évoluer selon les nouvelles recommendations et outils d'intégrations
 
-## Etat des lieu
+## Etat des lieux
 
 2 approches sont utilisés pour la création d'un thème drupal 
 
@@ -44,3 +44,10 @@
 - se limiter à l'environnement drupal (on ne peux plus utiliser les intégrations sur d'autres plateformes)
 - phase de test plus importante et en fin du projet
 - phase de SEO en aval
+
+
+## Approche à adopter
+
+En se basant sur l'existant, on se rend compte qu'il n'existe pas d'approche parfaite d'où la nécessité de trouver une solution qui réunit les deux methodes pour tirer le meilleurs parti d'elles.
+
+
