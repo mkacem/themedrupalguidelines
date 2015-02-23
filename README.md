@@ -90,7 +90,9 @@ exemple :
     font-size: 1em;
 }
 ```
-
+- on utilisera LESS comme préprocesseur css
+- on se basera sur le guideline css suivant : https://github.com/ymzoughi/cssguidelines
 - il sera interdit d'utiliser les id dans la css afin de pouvoir les réutiliser dans d'autres blocs
 - il sera interdit de référencer les classes css par rapport au body ou html du site sauf exeption (.front, .no-front,.ie8, lt-ie9...)
-- 
+- préférer des plugins jquery ustilisé sur d'anciens projets drupal
+- le developpeur se chargera d'ajouter les noms des classes spécifiques au différents bloc et régions du site
