@@ -6,9 +6,9 @@
 
 2 approches sont utilisés pour la création d'un thème drupal 
 
-**** A. approche classique basé sur une intégration simple html/css/js puis passage à drupal en vue de l'incorporer au theme
+### A. approche classique basé sur une intégration simple html/css/js puis passage à drupal en vue de l'incorporer au theme
 
-== Avantages : 
+#### Avantages : 
 - avoir un rendu présentable avant la phase de développement
 - liberté d'utilisation de balise et de classe css
 - facilité de débugage
@@ -20,7 +20,7 @@
 - phase de SEO en amant 
 - réduire la charge de travail du graphiste en déclinants des pages en se basant sur une charte graphique déjà créé
 
-== Inconvenients : 
+#### Inconvenients : 
 - phase de developpement plus importante
 - besoin de developpeurs lors de l'implémentation des intégrations
 - fixer le rendu des hooks aux donnés qu'on veut afficher 
@@ -28,15 +28,15 @@
 - perte de souplesse d'utilisation du BO de drupal 
 - travail en plus pour l'intégrateur/développeur
 
-**** A. approche back office basé sur ce que drupal génère comme rendu pour ses différents composants
+### B. approche back office basé sur ce que drupal génère comme rendu pour ses différents composants
 
-== Avantages :
+#### Avantages :
 - une rapidité de developpement 
 - restitition propre des données en se basant sur un thème générique installé au préalable
 - limiter l'intervention des developpeurs sur la partie thème
 - va et vient réduit entre dev et intégrateur
 
-== Inconvenients : 
+#### Inconvenients : 
 - code html qui n'est pas optimisé (génération de balises et tags innutile)
 - phase de maintenance plus importante
 - debugage des intégration plus compliqué
